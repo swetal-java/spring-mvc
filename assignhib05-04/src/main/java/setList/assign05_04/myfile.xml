@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context.xsd">
+	<bean class="setList.assign05_04.student" name="student1">
+		<property name="id" value="1"/>
+		<property name="fname" value="java"/>
+		<property name="lname" value="spring"/>
+		<property name="email" value="java@gmail.com"/>
+		<property name="contact" value="8956238956"/>
+	</bean>
+	
+	<bean class="setList.assign05_04.student" name="student2">
+		<property name="id" value="2"/>
+		<property name="fname" value="java2"/>
+		<property name="lname" value="spring2"/>
+		<property name="email" value="java2@gmail.com"/>
+		<property name="contact" value="8956238956"/>
+	</bean>
+	
+	<bean class="setList.assign05_04.student" name="student3">
+		<property name="id" value="3"/>
+		<property name="fname" value="java3"/>
+		<property name="lname" value="spring3"/>
+		<property name="email" value="java3@gmail.com"/>
+		<property name="contact" value="8956238956"/>
+	</bean>
+	
+	<bean class="setList.assign05_04.student" name="student4">
+		<property name="id" value="4"/>
+		<property name="fname" value="java4"/>
+		<property name="lname" value="spring4"/>
+		<property name="email" value="java4@gmail.com"/>
+		<property name="contact" value="8956238956"/>
+	</bean>
+	
+	<bean class="setList.assign05_04.student" name="student5">
+		<property name="id" value="5"/>
+		<property name="fname" value="java5"/>
+		<property name="lname" value="spring5"/>
+		<property name="email" value="java5@gmail.com"/>
+		<property name="contact" value="8956238956"/>
+	</bean>
+	
+	<bean name="list" class="java.util.ArrayList">
+	<constructor-arg>
+	<list>
+		<ref bean="student1"/>
+		<ref bean="student2"/>
+		<ref bean="student3"/>
+		<ref bean="student4"/>
+		<ref bean="student5"/>
+	</list>
+	</constructor-arg>
+	</bean>
+	</beans>
